@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vincent Murai | IT Expert & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#home" class="logo">Vincent Murai</a>
+    <button id="menu-btn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav id="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-btn" aria-label="Switch light/dark mode">Dark mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <p class="role">💼 IT Expert | Web & Mobile Developer | Tech Enthusiast</p>
+      <h1>Vincent Murai</h1>
+      <p class="meta">📍 Nairobi, Kenya &nbsp;|&nbsp; 🌐 Open to remote work</p>
+      <div class="hero-links">
+        <a href="mailto:muraivincent5@gmail.com" class="btn">📧 Email me</a>
+        <a href="https://www.linkedin.com/in/your-linkedin-name" target="_blank" rel="noopener" class="btn btn-outline">🔗 LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>👋 About me</h2>
+      <div class="about-grid">
+        <img src="profile.jpg" alt="Abstract painting of overlapping faces" class="avatar-img">
+        <p>
+          I'm a passionate IT expert with a strong interest in building impactful and user-friendly
+          digital solutions. I enjoy solving real-world problems through clean, efficient code and
+          love working in collaborative environments. My current focus is full-stack web development,
+          mobile applications, and open-source contributions. I'm also constantly learning new
+          technologies to stay ahead in the tech world.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>🔧 Skills</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="skills">
+            <li>JavaScript</li><li>Python</li><li>Dart</li><li>Java</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks & Libraries</h3>
+          <ul class="skills">
+            <li>React</li><li>Node.js</li><li>Flutter</li><li>Express.js</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools & Platforms</h3>
+          <ul class="skills">
+            <li>Git</li><li>Firebase</li><li>MongoDB</li><li>Docker</li><li>Figma</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Others</h3>
+          <ul class="skills">
+            <li>REST APIs</li><li>Agile/Scrum</li><li>Responsive Design</li><li>UI/UX principles</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>💡 Projects</h2>
+      <div class="project-list">
+
+        <article class="project">
+          <h3>📱 Shamba Link</h3>
+          <p class="project-type">Agricultural app</p>
+          <p>Connects farmers with resources, markets, and expert advice.</p>
+          <p class="tech"><strong>Tech stack:</strong> Flutter, Firebase, Dart</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+            <a href="#" target="_blank" rel="noopener">Demo Link</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>🌐 Personal Portfolio Website</h3>
+          <p class="project-type">Web</p>
+          <p>A modern responsive portfolio showcasing my skills and projects.</p>
+          <p class="tech"><strong>Tech stack:</strong> HTML, CSS, JavaScript</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+            <a href="#" target="_blank" rel="noopener">Live Site</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>📊 Task Manager API</h3>
+          <p class="project-type">Backend</p>
+          <p>A backend service to manage tasks with authentication and CRUD functionality.</p>
+          <p class="tech"><strong>Tech stack:</strong> Node.js, Express, MongoDB</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub Repo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>🎓 Education & Certifications</h2>
+      <ul class="edu-list">
+        <li>
+          <h3>Software Engineering Foundations</h3>
+          <p>ALX / Holberton School <span class="badge">Ongoing</span></p>
+        </li>
+        <li>
+          <h3>Responsive Web Design</h3>
+          <p>freeCodeCamp</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="contact-intro">Have a project or opportunity in mind? Send me a message and it opens in your email app.</p>
+      <form id="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Your email</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <p id="form-msg" role="status"></p>
+        <button type="submit" class="btn">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vincent Murai &nbsp;|&nbsp; Nairobi, Kenya</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
